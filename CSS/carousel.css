@@ -1,0 +1,47 @@
+    .carousel-wrapper {
+      overflow: hidden;
+      max-width: 90%;
+      margin: auto;
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.9s ease;
+      width: 300%; /* 100% * nombre d’items */
+    }
+
+    .carousel-item {
+      flex: 0 0 100%;
+      
+      box-sizing: border-box;
+      padding: 40px;
+      background-color: black;
+      color: white;
+      display: flex;
+      gap: 150px;
+      align-items: center;
+    }
+
+    .carousel-hbox {
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      width: 33%; 
+    }
+
+    .carousel-nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .carousel-nav button {
+      margin: 0 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .carousel-nav button.active {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+    }

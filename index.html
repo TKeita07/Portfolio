@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-scroll">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Léo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+</head>
+
+
+
+
+
+
+<!--------------------------------------------------- Debut du Header --------------------------------------------------->
+
+<body id="top">
+
+<header class="slide-in-top" id="slide-in-top">
+
+
+
+  <nav style="width: 100%; justify-content: space-between;">
+    <div class="hbox" style="gap : 70px;">
+      
+      <div class="vbox_center">
+        <p class="titre" style="color: white;">Léo Beaubien-Lemieux</p>
+        <p class="titre" style="color: white;">??? Designer</p>
+
+      </div>
+
+      <button onclick="document.location='todo.html'">Moi</button>
+      <button onclick="document.location='level-design.html'">Level Design</button>
+      <button onclick="document.location='todo.html'">Enemi Design</button>
+      <button onclick="document.location='todo.html'">CV</button>
+  
+    </div>
+
+
+    
+    <button onclick="document.location='todo.html'">FR/EN</button>
+
+  </nav>
+</header>
+
+
+
+<!--------------------------------------------------- Fin du Header --------------------------------------------------->
+
+
+
+
+<!-- The video -->
+<video autoplay muted loop id="bgVideo">
+  <source src="videos/video_3.mkv" type="video/mp4">
+</video>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div>
+
+
+  <!-- Buttons -->
+
+  <div class="vbox_center">
+    <div class="hbox_center m_button_intro"
+      style="justify-content: space-evenly; max-width: 90%; width: 100%;">
+        <button onclick="document.location='level-design.html'" class="slide-in-left" id="slide-in-left" style="width: 200px;">Level Design</button>
+        <button onclick="document.location='projets.html'" class="slide-in-right" id="slide-in-right" style="width: 200px;">AI Design</button>
+    </div>
+  </div>
+  
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="vbox_center slide-in-bottom" id="slide-in-bottom" style="gap: 150px;">
+      
+    <!-- Pop-up : Présentation -->
+      <div class="pop_up">
+        <p>ceci est un texte XD</p>
+
+
+      </div>
+
+
+        
+      <!-- Pop-up : Blabla -->
+      <div class="pop_up">
+        <p>ceci est un texte XD</p>
+
+
+      </div>
+
+
+
+        
+      <!-- Pop-up : Infos -->
+      <div class="pop_up">
+        <p>ceci est un texte XD</p>
+
+
+      </div>
+
+
+  </div>  
+
+  <br>
+  <br>
+
+
+  
+</div>
+
+
+<!---------------------- Scripts -------------------------->
+
+<script>
+// JS : gérer le zoom et l'apparition du contenu
+window.addEventListener("load", () => {
+  const video = document.getElementById("bgVideo");
+
+  document.documentElement.scrollTop = 0;
+
+  // Après 3 secondes, dézoome la vidéo
+  setTimeout(() => {
+    video.classList.add("zoom-out");
+
+    setTimeout(() => {
+      document.getElementById("slide-in-bottom").classList.add("visible");
+      document.getElementById("slide-in-left").classList.add("visible");
+      document.getElementById("slide-in-right").classList.add("visible");
+      document.getElementById("slide-in-top").classList.add("visible");
+
+      setTimeout(() => {
+        document.documentElement.classList.remove("no-scroll");
+        document.body.classList.remove("no-scroll");
+      }, 800);
+
+    }, 3000);
+
+  }, 500);
+});
+
+
+  // affichage après l'animation de la vidéo
+window.addEventListener("load", () => {
+
+});
+
+
+
+
+
+</script>
+
+
+<!--==================== Scripts ========================-->
+</body>
+</html>
