@@ -1,205 +1,72 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-scroll">
 <head>
-  <meta charset="UTF-8">
-  <title>Carousel Slide sans Flex</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Léo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-    body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    .carousel-wrapper {
-      position: relative;
-      overflow: hidden;
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      height: 500px; /* fixe une hauteur suffisante */
-    }
-
-    .carousel-item {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transform: translateX(100%);
-      transition: transform 0.6s ease, opacity 0.6s ease;
-      display: block;
-      background-color: black;
-      color: white;
-      padding: 40px;
-    }
-
-    .carousel-item.active {
-      opacity: 1;
-      transform: translateX(0);
-      z-index: 1;
-    }
-
-    .carousel-item.slide-out-left {
-      transform: translateX(-100%);
-    }
-
-    .carousel-item.slide-in-right {
-      transform: translateX(0);
-    }
-
-    .carousel-item.slide-out-right {
-      transform: translateX(100%);
-    }
-
-    .carousel-item.slide-in-left {
-      transform: translateX(0);
-    }
-
-    .carousel-content {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-    }
-
-    .vbox_center {
-      flex: 1 1 400px;
-      min-width: 300px;
-    }
-
-    .video_presentation {
-      flex: 1 1 400px;
-      min-width: 300px;
-    }
-
-    .video_presentation video {
-      width: 100%;
-      height: auto;
-    }
-
-    .carousel-nav {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .carousel-nav button {
-      margin: 0 5px;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-
-    .carousel-nav button.active {
-      background-color: #333;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
 </head>
-<body>
 
-  <div class="carousel-wrapper" id="carousel-wrapper">
-    <!-- Slide 1 -->
-    <div class="carousel-item active" id="slide-0">
-      <div class="carousel-content">
-        <div class="vbox_center">
-          <h2>Titre 1</h2>
-          <p>Description du projet 1...</p>
-          <button onclick="document.location='todo1.html'">See more</button>
-        </div>
-        <div class="video_presentation">
-          <video autoplay muted loop>
-            <source src="videos/video_2.mp4" type="video/mp4">
-          </video>
-        </div>
+
+
+
+
+
+<!--------------------------------------------------- Debut du Header --------------------------------------------------->
+
+<body id="top">
+
+<header>
+
+
+
+  <nav style="width: 100%; justify-content: space-between;">
+    <div class="hbox" style="gap : 70px;">
+      
+      <div class="vbox_center">
+        <p class="titre" style="color: white;">Léo Beaubien-Lemieux</p>
+        <p class="titre" style="color: white;">??? Designer</p>
+
       </div>
+
+      <button onclick="document.location='index.html'">Home</button>
+      <button onclick="document.location='todo.html'">Moi</button>
+      <button onclick="document.location='level-design.html'">Level Design</button>
+      <button onclick="document.location='todo.html'">Enemi Design</button>
+      <button onclick="document.location='todo.html'">CV</button>
+  
     </div>
 
-    <!-- Slide 2 -->
-    <div class="carousel-item" id="slide-1">
-      <div class="carousel-content">
-        <div class="vbox_center">
-          <h2>Titre 2</h2>
-          <p>Description du projet 2...</p>
-          <button onclick="document.location='todo2.html'">See more</button>
-        </div>
-        <div class="video_presentation">
-          <video autoplay muted loop>
-            <source src="videos/video_4.mp4" type="video/mp4">
-          </video>
-        </div>
+
+    
+    <button onclick="document.location='todo.html'">FR/EN</button>
+
+  </nav>
+</header>
+
+
+
+<!--------------------------------------------------- Fin du Header --------------------------------------------------->
+
+
+        
+      <!-- Pop-up : Infos -->
+      <div class="pop_up">
+        <p>TODO SHITS</p>
+
+
       </div>
-    </div>
 
-    <!-- Slide 3 -->
-    <div class="carousel-item" id="slide-2">
-      <div class="carousel-content">
-        <div class="vbox_center">
-          <h2>Titre 3</h2>
-          <p>Description du projet 3...</p>
-          <button onclick="document.location='todo3.html'">See more</button>
-        </div>
-        <div class="video_presentation">
-          <video autoplay muted loop>
-            <source src="videos/video_3.mkv" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="carousel-nav">
-    <button class="nav-btn active" onclick="showSlide(0)">1</button>
-    <button class="nav-btn" onclick="showSlide(1)">2</button>
-    <button class="nav-btn" onclick="showSlide(2)">3</button>
-  </div>
+<!---------------------- Scripts -------------------------->
 
-  <script>
-    let currentSlide = 0;
 
-    function showSlide(nextIndex) {
-      if (nextIndex === currentSlide) return;
 
-      const slides = document.querySelectorAll('.carousel-item');
-      const buttons = document.querySelectorAll('.nav-btn');
 
-      const direction = nextIndex > currentSlide ? 'left' : 'right';
-
-      // Sortie de l’ancien slide
-      const current = slides[currentSlide];
-      current.classList.remove('active');
-      current.classList.add(direction === 'left' ? 'slide-out-left' : 'slide-out-right');
-
-      // Entrée du nouveau slide
-      const next = slides[nextIndex];
-      next.classList.remove('slide-out-left', 'slide-out-right');
-      next.classList.add('active');
-
-      // Mise à jour des boutons
-      buttons.forEach((btn, i) => {
-        btn.classList.toggle('active', i === nextIndex);
-      });
-
-      currentSlide = nextIndex;
-
-      // Nettoyage après l'animation
-      setTimeout(() => {
-        slides.forEach(slide => {
-          if (slide !== next) {
-            slide.classList.remove('slide-out-left', 'slide-out-right', 'active');
-            slide.style.transform = 'translateX(100%)';
-            slide.style.opacity = 0;
-          }
-        });
-        next.style.transform = 'translateX(0)';
-        next.style.opacity = 1;
-      }, 600);
-    }
-  </script>
-
+<!--==================== Scripts ========================-->
 </body>
 </html>
