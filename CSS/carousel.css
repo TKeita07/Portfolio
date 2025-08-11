@@ -1,47 +1,142 @@
-    .carousel-wrapper {
-      overflow: hidden;
-      max-width: 90%;
-      margin: auto;
-      position: relative;
-    }
+.carousel-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+  position: relative;
+  display: grid;
+  align-items: stretch;
+  justify-content: center;
+  
+  height: calc(100vh - (125px - 17px)); /* fenêtre - hauteur du header */
+}
 
-    .carousel-track {
-      display: flex;
-      transition: transform 0.9s ease;
-      width: 300%; /* 100% * nombre d’items */
-    }
+.carousel-track {
+  display: flex;
+  transition: transform 0.9s ease;
+  width: 100%;
+  height: 100%;
+}
 
-    .carousel-item {
-      flex: 0 0 100%;
-      
-      box-sizing: border-box;
-      padding: 40px;
-      background-color: black;
-      color: white;
-      display: flex;
-      gap: 150px;
-      align-items: center;
-    }
+.carousel-item {
+  flex: 0 0 100%;
+  box-sizing: border-box;
+  
+  color: white;
+  display: flex;
+  gap: 150px;
+  align-items: start;
 
-    .carousel-hbox {
-      display: flex;
-      align-items: start;
-      justify-content: start;
-      width: 33%; 
-    }
+}
 
-    .carousel-nav {
-      text-align: center;
-      margin-top: 20px;
-    }
+.carousel-item-container {
+  height: 100%;
+  padding: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
-    .carousel-nav button {
-      margin: 0 5px;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
+.carousel-hbox {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
 
-    .carousel-nav button.active {
-      background-color: #ffffff;
-      color: rgb(0, 0, 0);
-    }
+.carousel-nav {
+  position: fixed;       /* fixé par rapport à la fenêtre */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 60px;          /* distance du bas */
+  left: 50%;             /* centre horizontal */
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 1000;         /* reste au-dessus du contenu */
+  gap : 30px;
+    margin: 0;
+  padding: 0;
+}
+
+.carousel-nav button {
+  margin: 5px 5px;
+  padding: 10px 20px;
+  border-radius: 45%;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.carousel-nav button.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+    
+.video_presentation {
+  position: relative;
+  width: 45%;
+}
+
+
+.video_carousel {
+  width:  100%;
+  height: 100%;
+  object-fit: cover;
+  position: center;
+  border-radius: 50px;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.over_image {
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2; /* Assurez-vous que la superposition est au-dessus de la vidéo */
+
+}
+
+
+
+.carousel-title {
+  font-size: 65px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+.carousel-title p {
+  line-height: 100%;
+}
+
+.carousel-date {
+  font-size: 55px;
+  font-weight: 1000;
+  color: #8f8f8f;
+  margin-bottom: 10px;
+}
+.carousel-date p {
+  line-height: 100%;
+}
+
+.carousel-description {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+  background-color: rgba(0, 0, 0, 0.742);
+  border-radius: 30px;
+  padding: 15px;
+  margin-top: 15px;
+
+  
+
+}
+.carousel-description-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-button {
+  align-self: center;
+  border-radius: 50px;
+  border: black 8px solid;
+}

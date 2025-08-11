@@ -151,7 +151,7 @@ button {
   border: #1578b6 1px solid;
   opacity: 0.9;
   /* Amélioration pour mobile */
-  min-height: 44px;
+  min-height: 24px;
   font-size: 16px;
 }
 
@@ -228,7 +228,7 @@ button.default-style:active {
 }
 
 .bgImage {
-  background-image: url('/Images/image_2.jpg');
+  
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -240,18 +240,7 @@ button.default-style:active {
   z-index: -10;
 }
 
-.video_presentation {
-  width: 80%;
-}
 
-.video22 {
-  width:  100%;
-  height: 100%;
-  object-fit: cover;
-  position: center;
-  top: 0;
-  left: 0;
-}
 
 #bgVideo {
   object-fit: cover;

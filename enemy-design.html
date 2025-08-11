@@ -17,12 +17,13 @@
 
 
 
+
 <!--------------------------------------------------- Debut du Header --------------------------------------------------->
 
-<body id="top">
+<body id="top" style="background-color: black;">
 
 <header>
-  <nav style="width: 100%; justify-content: space-between;">
+  <nav style="width: 100%; justify-content: space-between; ">
     <div class="hbox" style="gap : 70px;">
       
       <div class="vbox_center">
@@ -34,7 +35,7 @@
       <button onclick="document.location='index.html'">Home</button>
       <button onclick="document.location='todo.html'">Moi</button>
       <button onclick="document.location='level-design.html'">Level Design</button>
-      <button onclick="document.location='enemy-design.html'">Enemi Design</button>
+      <button onclick="document.location='enemy-design.html'" style="background-color: white; color: #000;" disabled>Enemy Design</button>
       <button onclick="document.location='todo.html'">CV</button>
   
     </div>
@@ -48,78 +49,137 @@
 
 <!--------------------------------------------------- Fin du Header --------------------------------------------------->
 
-<div class="bgImage"></div>
-
-
-
-<div class="vbox_center" style="padding: 125px 0px;">
+<div class="vbox_center">
 
 
   <div class="carousel-wrapper">
     <div class="carousel-track" id="carousel-track">
       <!-- Item 1 -->
-      <div class="carousel-item">
-        <div class="carousel-hbox">
-          <div class="vbox_center" style="width: 100%;">
-            <div class="big">
-              <p>Titre du projet 1</p>
+      <div class="carousel-item"> 
+        <div class="carousel-item-container"
+          style="background-image:
+            linear-gradient(0.25turn, rgba(0, 0, 0, 0.925),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)), 
+            url('/Images/bg_papamole2.png');
+            ">
+          
+          <div class="carousel-hbox">
+            <div class="vbox" style="width: 40%;">
+              <div class="carousel-title">
+                <p>PAPA MOLE</p>
+              </div>
+              <div class="carousel-date">
+                <p>2025</p>
+              </div>
+              <div class="carousel-description">
+                <p class="carousel-description-title">Epic Stuff Description</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+              </div>
+              <button onclick="document.location='todo.html'" class="carousel-button">My Involvment</button>
             </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+            <div class="video_presentation">
+              <div class="over_image"style="
+                scale: 1;
+                left: 70%;
+                bottom: -440px;
+                ">
+                <img src="Images/over_papamole2.png">
+              </div>
+
+              <video autoplay muted loop class="video_carousel">
+                <!-- <source src="videos/video_2.mp4" type="video/mp4"> -->
+              </video>
             </div>
-            <button onclick="document.location='todo.html'">See more</button>
           </div>
-          <div class="video_presentation">
-            <video autoplay muted loop class="video22">
-              <source src="videos/video_2.mp4" type="video/mp4">
-            </video>
-          </div>
+
         </div>
 
       </div>
 
       <!-- Item 2 -->
-      <div class="carousel-item">
-        <div class="carousel-hbox">
-          <div class="vbox_center" style="width: 100%;">
-            <div class="big">
-              <p>Titre du projet 2</p>
+      <div class="carousel-item"> 
+        <div class="carousel-item-container"
+          style="background-image:
+            linear-gradient(0.25turn, rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.79)), 
+            url('/Images/bg_eldenboat.png');
+            ">
+          
+          <div class="carousel-hbox">
+            <div class="vbox" style="width: 40%;">
+              <div class="carousel-title">
+                <p>ELDEN BOAT</p>
+              </div>
+              <div class="carousel-date">
+                <p>2024</p>
+              </div>
+              <div class="carousel-description">
+                <p class="carousel-description-title">Epic Stuff Description</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+              </div>
+              <button onclick="document.location='todo.html'" class="carousel-button">My Involvment</button>
             </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+            <div class="video_presentation">
+              <div class="over_image"style="
+                scale: 1.2;
+                left: 75%;
+                bottom: -380px;
+                ">
+                <img src="Images/over_eldenboat.png">
+              </div>
+
+              <video autoplay muted loop class="video_carousel">
+                <!-- <source src="videos/video_2.mp4" type="video/mp4"> -->
+              </video>
             </div>
-            <button onclick="document.location='todo.html'">See more</button>
           </div>
-          <div class="video_presentation">
-            <video autoplay muted loop class="video22">
-              <source src="videos/video_4.mkv" type="video/mp4">
-            </video>
-          </div>
+
         </div>
+
       </div>
 
       <!-- Item 3 -->
-      <div class="carousel-item">
-        <div class="carousel-hbox">
-          <div class="vbox_center" style="width: 100%;">
-            <div class="big">
-              <p>Titre du projet 3</p>
-            </div>
-            <div>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
-            </div>
-            <button onclick="document.location='todo.html'">See more</button>
-          </div>
-          <div class="video_presentation">
-            <video autoplay muted loop class="video22">
-              <source src="videos/video_3.mkv" type="video/mp4">
-            </video>
-          </div>
+      <div class="carousel-item"> 
+        <div class="carousel-item-container"
+          style="background-image:
+            linear-gradient(0.25turn, rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.79)), 
+            url('/Images/bg_debugcity.png');
+            ">
           
+          <div class="carousel-hbox">
+            <div class="vbox" style="width: 40%;">
+              <div class="carousel-title">
+                <p>DEBUG CITY</p>
+              </div>
+              <div class="carousel-date">
+                <p>2025</p>
+              </div>
+              <div class="carousel-description">
+                <p class="carousel-description-title">Epic Stuff Description</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+              </div>
+              <button onclick="document.location='todo.html'" class="carousel-button">My Involvment</button>
+            </div>
+            <div class="video_presentation">
+              <div class="over_image"style="
+                scale: 1.3;
+                left: 85%;
+                bottom: -460px;
+                ">
+                <img src="Images/over_debugcity.png">
+              </div>
+
+              <video autoplay muted loop class="video_carousel">
+                <!-- <source src="videos/video_2.mp4" type="video/mp4"> -->
+              </video>
+            </div>
+          </div>
+
         </div>
+
       </div>
+
+
+
     </div>
-  </div>
 
 
 
@@ -132,7 +192,7 @@
 
 
 
-
+  </div>
 </div>
   
 
