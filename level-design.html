@@ -203,25 +203,47 @@
 
 
 <!---------------------- Scripts -------------------------->
-  <script>
-    let currentSlide = 0;
+<script>
+  let currentSlide = 0;
 
-    function showSlide(index) {
-      const track = document.getElementById('carousel-track');
-      const buttons = document.querySelectorAll('.nav-btn');
-      const totalSlides = document.querySelectorAll('.carousel-item').length;
+  function showSlide(index) {
+    const track = document.getElementById('carousel-track');
+    const buttons = document.querySelectorAll('.nav-btn');
+    const totalSlides = document.querySelectorAll('.carousel-item').length;
 
-      if (index < 0) index = 0;
-      if (index >= totalSlides) index = totalSlides - 1;
+    if (index < 0) index = 0;
+    if (index >= totalSlides) index = totalSlides - 1;
 
-      track.style.transform = `translateX(-${index * 100}%)`;
-      currentSlide = index;
+    track.style.transform = `translateX(-${index * 100}%)`;
+    currentSlide = index;
 
-      buttons.forEach((btn, i) => {
-        btn.classList.toggle('active', i === index);
-      });
+    buttons.forEach((btn, i) => {
+      btn.classList.toggle('active', i === index);
+    });
+  }
+
+  // Ajout du défilement à la molette
+  document.getElementById('carousel-track').addEventListener('wheel', function(e) {
+    e.preventDefault(); // Empêche le scroll vertical de la page
+    if (e.deltaY > 0) {
+      showSlide(currentSlide + 1); // Molette vers le bas → slide suivant
+    } else {
+      showSlide(currentSlide - 1); // Molette vers le haut → slide précédent
     }
-  </script>
+  });
+
+    // Ajout du défilement à la molette
+  document.getElementById('carousel-nav').addEventListener('wheel', function(e) {
+    e.preventDefault(); // Empêche le scroll vertical de la page
+    if (e.deltaY > 0) {
+      showSlide(currentSlide + 1); // Molette vers le bas → slide suivant
+    } else {
+      showSlide(currentSlide - 1); // Molette vers le haut → slide précédent
+    }
+  });
+
+
+</script>
 
 <!--==================== Scripts ========================-->
 </body>
