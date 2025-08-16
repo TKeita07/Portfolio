@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr" style="  height: 100%;
+  margin: 0;
+  padding: 0;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Léo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/carousel.css" />
+</head>
+
+
+
+
+
+
+<!--------------------------------------------------- Debut du Header --------------------------------------------------->
+
+<body id="top" style="background-color: black;">
+
+<div id="navbar"></div>
+
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("navbar").innerHTML = html;
+      document.getElementById("nav-btn-projects").classList.add("active");
+
+    });
+</script>
+
+
+<!-- Contact Infos -->
+<div id="contact_btns"></div>
+
+<script>
+  fetch("contact_btns.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contact_btns").innerHTML = html;
+
+    });
+</script>
+
+<!--------------------------------------------------- Fin du Header --------------------------------------------------->
+
+<!-- <div class="bgImage" style="background-image: url('Images/bg_papamole.png');"></div> -->
+
+
+
+<div class="vbox_center">
+
+
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carousel-track">
+      <!-- Item 1 -->
+      <div class="carousel-item"> 
+        <div class="carousel-item-container"
+          style="background-image:
+            linear-gradient(0.25turn, rgba(0, 0, 0, 0.925),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.938)), 
+            url('Images/bg_papamole.png');
+            ">
+          
+          <div class="carousel-hbox">
+            <div class="vbox" style="width: 40%;">
+              <div class="carousel-title">
+                <p>PAPA MOLE</p>
+              </div>
+              <div class="carousel-date">
+                <p>2025</p>
+              </div>
+              <div class="carousel-description">
+                <p class="carousel-description-title">Epic Stuff Description</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+              </div>
+
+              <div class="hbox_center carousel-job-btn-container">
+                <button class="carousel-job-btn btn_green" onclick="document.location='todo.html'">Level Design</button>
+                <button class="carousel-job-btn btn_orange" onclick="document.location='todo.html'">Encounter Design</button>
+                <button class="carousel-job-btn btn_red" onclick="document.location='todo.html'">AI Design</button>
+              </div>
+
+              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTION</button>
+            </div>
+            <div class="video_presentation">
+              <div class="over_image">
+                <img src="Images/over_papamole.png">
+              </div>
+
+              <video preload="auto" autoplay muted loop poster="Images/ff_papamole.png" class="video_carousel">
+                <source src="videos/vid_papamole.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Item 2 -->
+      <div class="carousel-item"> 
+        <div class="carousel-item-container"
+          style="background-image:
+            linear-gradient(0.25turn, rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.79)), 
+            url('Images/bg_eldenboat.png');
+            ">
+          
+          <div class="carousel-hbox">
+            <div class="vbox" style="width: 40%;">
+              <div class="carousel-title">
+                <p>ELDEN BOAT</p>
+              </div>
+              <div class="carousel-date">
+                <p>2024</p>
+              </div>
+              <div class="carousel-description">
+                <p class="carousel-description-title">Epic Stuff Description</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+              </div>
+
+              <div class="hbox_center carousel-job-btn-container">
+                <button class="carousel-job-btn btn_green" onclick="document.location='todo.html'">Level Design</button>
+                <button class="carousel-job-btn btn_blue" onclick="document.location='todo.html'">Puzzle Design</button>
+                <button class="carousel-job-btn btn_pink" onclick="document.location='todo.html'">UI/UX Design</button>
+              </div>
+
+              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTION</button>
+            </div>
+            <div class="video_presentation">
+              <div class="over_image">
+                <img src="Images/over_eldenboat.png">
+              </div>
+
+              <video preload="auto" autoplay muted loop poster="Images/ff_eldenboat.png" class="video_carousel">
+                <source src="videos/vid_eldenboat.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Item 3 -->
+      <div class="carousel-item"> 
+        <div class="carousel-item-container"
+          style="background-image:
+            linear-gradient(0.25turn, rgba(0, 0, 0, 0.808),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.79)), 
+            url('Images/bg_debugcity.png');
+            ">
+          
+          <div class="carousel-hbox">
+            <div class="vbox" style="width: 40%;">
+              <div class="carousel-title">
+                <p>DEBUG CITY</p>
+              </div>
+              <div class="carousel-date">
+                <p>2025</p>
+              </div>
+              <div class="carousel-description">
+                <p class="carousel-description-title">Epic Stuff Description</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa</p>
+              </div>
+
+              <div class="hbox_center carousel-job-btn-container">
+                <button class="carousel-job-btn btn_green" onclick="document.location='todo.html'">Level Design</button>
+                <button class="carousel-job-btn btn_orange" onclick="document.location='todo.html'">Encounter Design</button>
+                <button class="carousel-job-btn btn_red" onclick="document.location='todo.html'">AI Design</button>
+              </div>
+
+              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTION</button>
+            </div>
+            <div class="video_presentation">
+              <div class="over_image">
+                <img src="Images/over_debugcity.png">
+              </div>
+
+              <video preload="auto" autoplay muted loop poster="Images/ff_eldenboat.png" class="video_carousel">
+                <source src="videos/vid_eldenboat.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Navigation -->
+    <div class="carousel-nav">
+      <button class="carousel-nav-btn active" onclick="showSlide(0)">1</button>
+      <button class="carousel-nav-btn" onclick="showSlide(1)">2</button>
+      <button class="carousel-nav-btn" onclick="showSlide(2)">3</button>
+    </div>
+
+
+
+  </div>
+</div>
+  
+
+
+<!---------------------- Scripts -------------------------->
+<script>
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    const track = document.getElementById('carousel-track');
+    const buttons = document.querySelectorAll('.carousel-nav-btn');
+    const totalSlides = document.querySelectorAll('.carousel-item').length;
+
+    if (index < 0) index = 0;
+    if (index >= totalSlides) index = totalSlides - 1;
+
+    track.style.transform = `translateX(-${index * 100}%)`;
+    currentSlide = index;
+
+    buttons.forEach((btn, i) => {
+      btn.classList.toggle('active', i === index);
+    });
+  }
+
+  // Ajout du défilement à la molette
+  document.getElementById('carousel-track').addEventListener('wheel', function(e) {
+    e.preventDefault(); // Empêche le scroll vertical de la page
+    if (e.deltaY > 0) {
+      showSlide(currentSlide + 1); // Molette vers le bas → slide suivant
+    } else {
+      showSlide(currentSlide - 1); // Molette vers le haut → slide précédent
+    }
+  });
+
+
+
+</script>
+
+<!--==================== Scripts ========================-->
+</body>
+</html>

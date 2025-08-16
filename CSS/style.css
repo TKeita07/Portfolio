@@ -307,3 +307,21 @@ button.default-style:active {
   transform: translateX(0);
   opacity: 0.9;
 }
+
+/* Contact Buttons */
+.contact_buttons {
+  position: fixed;
+  width: 4%;
+  gap: 20px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+}
+
+.contact_buttons img {
+  width: 100%;
+  cursor: pointer;
+  height: 100%;
+  object-fit: contain;
+  filter: invert(100%);
+}

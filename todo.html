@@ -16,46 +16,42 @@
 
 
 
+
 <!--------------------------------------------------- Debut du Header --------------------------------------------------->
 
-<body id="top">
+<body id="top" style="background-color: black;">
 
-<header>
+<div id="navbar"></div>
 
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("navbar").innerHTML = html;
+      document.getElementById("nav-btn-gam").classList.add("active");
 
-
-  <nav style="width: 100%; justify-content: space-between;">
-    <div class="hbox" style="gap : 70px;">
-      
-      <div class="vbox_center">
-        <p class="titre" style="color: white;">Léo Beaubien-Lemieux</p>
-        <p class="titre" style="color: white;">??? Designer</p>
-
-      </div>
-
-      <button onclick="document.location='index.html'">Home</button>
-      <button onclick="document.location='todo.html'">Moi</button>
-      <button onclick="document.location='level-design.html'">Level Design</button>
-      <button onclick="document.location='enemy-design.html'">Enemy Design</button>
-      <button onclick="document.location='todo.html'">CV</button>
-  
-    </div>
+    });
+</script>
 
 
-    
-    <button onclick="document.location='todo.html'">FR/EN</button>
+<!-- Contact Infos -->
+<div id="contact_btns"></div>
 
-  </nav>
-</header>
+<script>
+  fetch("contact_btns.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contact_btns").innerHTML = html;
 
-
+    });
+</script>
 
 <!--------------------------------------------------- Fin du Header --------------------------------------------------->
 
 
         
       <!-- Pop-up : Infos -->
-      <div class="pop_up">
+      <div class="pop_up" style="background-color: blue;">
         <p>TODO SHITS</p>
 
 

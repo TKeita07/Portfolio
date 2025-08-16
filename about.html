@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Léo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/about.css" />
+</head>
+
+
+
+
+
+
+<!--------------------------------------------------- Debut du Header --------------------------------------------------->
+
+<body id="top">
+
+<div id="navbar"></div>
+
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("navbar").innerHTML = html;
+      document.getElementById("nav-btn-about").classList.add("active");
+
+    });
+</script>
+
+<!-- Contact Infos -->
+<div id="contact_btns"></div>
+
+<script>
+  fetch("contact_btns.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contact_btns").innerHTML = html;
+
+    });
+</script>
+
+<!--------------------------------------------------- Fin du Header --------------------------------------------------->
+
+
+
+
+
+
+<div style="width: 100%; height: 50vh; background-image: url('Images/bg_about.png');">  
+</div>
+
+<div class="vbox_center me_global">
+
+  <div class="vbox_center me_section">
+
+    <!-- Photo + About Me text section -->
+    <div class="hbox_center me_about_me">
+
+      <!-- Photo -->
+      <div class="me_about_pfp">
+        <img src="Images/about_pfp.png">
+      </div>
+
+      <!-- About Me text -->
+      <div class="vbox_center me_about_text">
+        <div class="me_title">
+          <p>ABOUT ME</p>
+        </div>
+
+        <div class="vbox me_about_text_content">
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+          <p>orem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada</p>
+          <p>orem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada</p>
+      
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Engines -->
+    <div class="vbox_center me_engines" >
+        <!-- Engines title -->
+        <div class="me_title">
+          <p>EXPERIENCE WITH ENGINES</p>
+        </div>
+
+        <hr class="me_line">
+
+        <!-- Engines logos -->
+        <div class="hbox_center me_engines_logos">
+          <img src="Images/about_logo_unreal.png">
+          <img src="Images/about_logo_godot.png">
+          <img src="Images/about_logo_unity.png">
+        </div>
+    </div>
+
+
+
+    <!-- Tools -->
+    <div class="vbox_center me_tools" >
+        <!-- Tools title -->
+        <div class="me_title">
+          <p>EXPERIENCE WITH ENGINES</p>
+        </div>
+
+        <hr class="me_line">
+
+        <!-- Tools logos -->
+        <div class="vbox_center">
+          <div class="hbox_center me_tools_logos">
+            <img src="Images/about_logo_office.png">
+            <img src="Images/about_logo_miro.png">
+            <img src="Images/about_logo_jira.png">
+          </div>
+          <div class="hbox_center me_tools_logos">
+            <img src="Images/about_logo_notion.png" style="filter: invert(100%);">
+
+          </div>
+        </div>
+    </div>
+
+    <!-- Competences -->
+    <div class="vbox_center me_competences" >
+        <!-- Competences title -->
+        <div class="me_title">
+          <p>COMPÉTENCES</p>
+        </div>
+
+        <hr class="me_line">
+
+        <!-- Competences list -->
+        <div class="hbox_center me_competences_list">
+          <!-- Engines -->
+          <div class="vbox_center me_competences_list_item">
+            <img src="Images/about_logo_engines.png">
+
+            <p class="me_competences_list_item_title">GAME PROTOTYPING</p>
+            <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+          </div>
+          
+          <!-- Problems -->
+          <div class="vbox_center me_competences_list_item">
+            <img src="Images/about_logo_problems.png">
+
+            <p class="me_competences_list_item_title">PROBLEM SOLVING</p>
+            <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+          </div>
+          
+          <!-- Documentation -->
+          <div class="vbox_center me_competences_list_item">
+            <img src="Images/about_logo_documentation.png">
+
+            <p class="me_competences_list_item_title">DOCUMENTATION</p>
+            <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+          </div>
+        </div>
+    </div>
+
+    <!-- Contact info -->
+    <div id="contact" class="vbox_center me_contact" >
+        <!-- Contact title -->
+        <div class="me_title">
+          <p>CONTACT INFO</p>
+        </div>
+
+        <hr class="me_line">
+
+        <!-- Free -->
+        <p class="me_contact_text">Feel free to contact me! I will try to answer as soon as possible.</p>
+
+        <!-- Links -->
+        <div class="vbox_center me_contact_infos">
+
+          <div class="hbox_center me_contact_links">
+            <!-- Mail -->
+            <div class="hbox_center me_contact_links_item">
+              <img src="Images/logo_email.png">
+              <a href="mailto:beaubienlemieux@gmail.com">beaubienlemieux@gmail.com</a>
+            </div>
+            <!-- LinkedIn -->
+            <div class="hbox_center me_contact_links_item">
+              <img src="Images/logo_linked.png">
+              <a href="https://www.linkedin.com/in/l%C3%A9o-beaubien-lemieux-0b0232347/?originalSubdomain=ca" target="_blank">in/léo.Beaubien-Lemieux</a>
+            </div>
+          </div>
+
+          <div class="hbox_center me_contact_links_item">
+            <img src="Images/logo_itchio.png">
+            <a href="https://maitrepatate.itch.io/" target="_blank">https://maitrepatate.itch.io/</a>
+          </div>
+
+
+        </div>
+
+
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!---------------------- Scripts -------------------------->
+
+
+
+
+<!--==================== Scripts ========================-->
+</body>
+</html>

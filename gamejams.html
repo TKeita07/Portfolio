@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-scroll">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Léo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+</head>
+
+
+
+
+
+
+
+<!--------------------------------------------------- Debut du Header --------------------------------------------------->
+
+<body id="top" style="background-color: black;">
+
+<div id="navbar"></div>
+
+<script>
+  fetch("nav.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("navbar").innerHTML = html;
+      document.getElementById("nav-btn-gamejams").classList.add("active");
+
+    });
+</script>
+
+
+<!-- Contact Infos -->
+<div id="contact_btns"></div>
+
+<script>
+  fetch("contact_btns.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("contact_btns").innerHTML = html;
+
+    });
+</script>
+
+<!--------------------------------------------------- Fin du Header --------------------------------------------------->
+
+
+        
+      <!-- Pop-up : Infos -->
+      <div class="pop_up" style="background-color: blue;">
+        <p>GAMEJAMS AND MORE</p>
+        <br>
+        <br>
+        <p>TODO</p>
+
+
+      </div>
+
+
+<!---------------------- Scripts -------------------------->
+
+
+
+
+<!--==================== Scripts ========================-->
+</body>
+</html>
