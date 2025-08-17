@@ -68,7 +68,7 @@
             ">
           
           <div class="carousel-hbox">
-            <div class="vbox" style="width: 40%;">
+            <div class="vbox carousel-item-infos">
               <div class="carousel-title">
                 <p>PAPA MOLE</p>
               </div>
@@ -237,7 +237,7 @@
     } else {
       showSlide(currentSlide - 1); // Molette vers le haut → slide précédent
     }
-  });
+  }, { passive: false });
 
 
 

@@ -7,7 +7,7 @@
   align-items: stretch;
   justify-content: center;
   
-  height: calc(100vh - (67.6px)); /* fenêtre - hauteur du header */
+  height: calc(100vh - (0px)); /* fenêtre - hauteur du header */
 }
 
 .carousel-track {
@@ -30,17 +30,27 @@
 
 .carousel-item-container {
   height: 100%;
-  padding: 100px;
+  padding: 0px 100px 100px 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 66.66%;
+}
+
+.carousel-item-infos {
+  justify-content: center;
+  width: 40%;
+  height: 100%;
 }
 
 .carousel-hbox {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
+  height: 75vh;
 }
 
 .carousel-nav {

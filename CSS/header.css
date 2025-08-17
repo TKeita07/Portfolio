@@ -4,7 +4,7 @@ header {
   display: flex;
   flex-direction: column; 
   background-color: #000000;
-  position: sticky;
+  position: fixed;
   top: 0;   
   width: 100%;
   min-width: 100%;
@@ -14,7 +14,7 @@ header {
   align-items: center;
   padding-left: 65px;
   padding-right: 65px;
-  
+  /* border-bottom: rgb(255, 255, 255) 1px solid; */
 }
 
 

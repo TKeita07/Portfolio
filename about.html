@@ -49,9 +49,6 @@
 
 
 
-
-
-
 <div style="width: 100%; height: 50vh; background-image: url('Images/bg_about.png');">  
 </div>
 
@@ -60,7 +57,7 @@
   <div class="vbox_center me_section">
 
     <!-- Photo + About Me text section -->
-    <div class="hbox_center me_about_me">
+    <div id="about_me" class="hbox_center me_about_me">
 
       <!-- Photo -->
       <div class="me_about_pfp">
@@ -87,7 +84,7 @@
 
 
     <!-- Engines -->
-    <div class="vbox_center me_engines" >
+    <div id="engines" class="vbox_center me_engines" >
         <!-- Engines title -->
         <div class="me_title">
           <p>EXPERIENCE WITH ENGINES</p>
@@ -106,7 +103,7 @@
 
 
     <!-- Tools -->
-    <div class="vbox_center me_tools" >
+    <div id="tools" class="vbox_center me_tools" >
         <!-- Tools title -->
         <div class="me_title">
           <p>EXPERIENCE WITH ENGINES</p>
@@ -129,7 +126,7 @@
     </div>
 
     <!-- Competences -->
-    <div class="vbox_center me_competences" >
+    <div id="competences" class="vbox_center me_competences" >
         <!-- Competences title -->
         <div class="me_title">
           <p>COMPÉTENCES</p>
@@ -215,6 +212,35 @@
 
 
 
+<script>
+  // Toutes les sections qu’on veut observer
+  const sections = document.querySelectorAll("div[id]");
+
+  // Fonction pour gérer l’activation du menu
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        const id = entry.target.getAttribute("id");
+        const link = document.querySelector(`#nav-btn-${id}`);
+        
+        if (entry.isIntersecting) {
+          if (id == "contact") {
+            document.querySelector("#nav-btn-contact").classList.add("active");
+            document.querySelector("#nav-btn-about").classList.remove("active");
+          } else {
+            document.querySelector("#nav-btn-contact").classList.remove("active");
+            document.querySelector("#nav-btn-about").classList.add("active");
+          }
+        }
+      });
+    },
+    { threshold: 0.6 } // 60% de la section doit être visible pour l’activer
+  );
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+</script>
 
 <!--==================== Scripts ========================-->
 </body>

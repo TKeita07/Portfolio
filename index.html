@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/about.css" />
 </head>
 
 
@@ -18,7 +19,7 @@
 
 <!--------------------------------------------------- Debut du Header --------------------------------------------------->
 
-<body id="top">
+<body id="top" style="background-color: black;">
 
 <div id="navbar"></div>
 
@@ -34,13 +35,14 @@
 </script>
 
 <!-- Contact Infos -->
-<div id="contact_btns"></div>
+<div id="contact_btns" class="slide-in-right" ></div>
 
 <script>
   fetch("contact_btns.html")
     .then(res => res.text())
     .then(html => {
       document.getElementById("contact_btns").innerHTML = html;
+      // document.querySelector("#contact_btns").classList.add("slide-in-right");
 
     });
 </script>
@@ -53,73 +55,161 @@
 
 <!-- The video -->
 <video autoplay muted loop id="bgVideo">
-  <source src="videos/video_2.mp4" type="video/mp4">
+  <source src="videos/vid_eldenboat.mp4" type="video/mp4">
 </video>
 
 
+<div class="home_global">
+
+  <div class="slide-in-bottom" id="slide-in-bottom">
+    
+    <div class="vbox_center me_global">
+
+      <div class="vbox_center me_section">
+
+        <!-- Photo + About Me text section -->
+        <div id="about_me" class="hbox_center me_about_me">
+
+          <!-- Photo -->
+          <div class="me_about_pfp">
+            <img src="Images/about_pfp.png">
+          </div>
+
+          <!-- About Me text -->
+          <div class="vbox_center me_about_text">
+            <div class="me_title">
+              <p>ABOUT ME</p>
+            </div>
+
+            <div class="vbox me_about_text_content">
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+              <p>orem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada</p>
+              <p>orem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada</p>
+          
+            </div>
+
+          </div>
+        </div>
+
+
+        <!-- Engines -->
+        <div id="engines" class="vbox_center me_engines" >
+            <!-- Engines title -->
+            <div class="me_title">
+              <p>EXPERIENCE WITH ENGINES</p>
+            </div>
+
+            <hr class="me_line">
+
+            <!-- Engines logos -->
+            <div class="hbox_center me_engines_logos">
+              <img src="Images/about_logo_unreal.png">
+              <img src="Images/about_logo_godot.png">
+              <img src="Images/about_logo_unity.png">
+            </div>
+        </div>
 
 
 
-<br>
-<br>
-<br>
-<br>
+        <!-- Tools -->
+        <div id="tools" class="vbox_center me_tools" >
+            <!-- Tools title -->
+            <div class="me_title">
+              <p>EXPERIENCE WITH ENGINES</p>
+            </div>
 
-<div>
+            <hr class="me_line">
 
+            <!-- Tools logos -->
+            <div class="vbox_center">
+              <div class="hbox_center me_tools_logos">
+                <img src="Images/about_logo_office.png">
+                <img src="Images/about_logo_miro.png">
+                <img src="Images/about_logo_jira.png">
+              </div>
+              <div class="hbox_center me_tools_logos">
+                <img src="Images/about_logo_notion.png" style="filter: invert(100%);">
 
-  <!-- Buttons -->
+              </div>
+            </div>
+        </div>
 
-  <div class="vbox_center">
-    <div class="hbox_center m_button_intro"
-      style="justify-content: space-evenly; max-width: 90%; width: 100%;">
-        <button onclick="document.location='level-design.html'" class="slide-in-left" id="slide-in-left" style="width: 200px;">Level Design</button>
-        <button onclick="document.location='enemy-design.html'" class="slide-in-right" id="slide-in-right" style="width: 200px;">Enemy Design</button>
+        <!-- Competences -->
+        <div id="competences" class="vbox_center me_competences" >
+            <!-- Competences title -->
+            <div class="me_title">
+              <p>COMPÉTENCES</p>
+            </div>
+
+            <hr class="me_line">
+
+            <!-- Competences list -->
+            <div class="hbox_center me_competences_list">
+              <!-- Engines -->
+              <div class="vbox_center me_competences_list_item">
+                <img src="Images/about_logo_engines.png">
+
+                <p class="me_competences_list_item_title">GAME PROTOTYPING</p>
+                <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+              </div>
+              
+              <!-- Problems -->
+              <div class="vbox_center me_competences_list_item">
+                <img src="Images/about_logo_problems.png">
+
+                <p class="me_competences_list_item_title">PROBLEM SOLVING</p>
+                <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+              </div>
+              
+              <!-- Documentation -->
+              <div class="vbox_center me_competences_list_item">
+                <img src="Images/about_logo_documentation.png">
+
+                <p class="me_competences_list_item_title">DOCUMENTATION</p>
+                <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+              </div>
+            </div>
+        </div>
+
+        <!-- Contact info -->
+        <div id="contact" class="vbox_center me_contact" >
+            <!-- Contact title -->
+            <div class="me_title">
+              <p>CONTACT INFO</p>
+            </div>
+
+            <hr class="me_line">
+
+            <!-- Free -->
+            <p class="me_contact_text">Feel free to contact me! I will try to answer as soon as possible.</p>
+
+            <!-- Links -->
+            <div class="vbox_center me_contact_infos">
+
+              <div class="hbox_center me_contact_links">
+                <!-- Mail -->
+                <div class="hbox_center me_contact_links_item">
+                  <img src="Images/logo_email.png">
+                  <a href="mailto:beaubienlemieux@gmail.com">beaubienlemieux@gmail.com</a>
+                </div>
+                <!-- LinkedIn -->
+                <div class="hbox_center me_contact_links_item">
+                  <img src="Images/logo_linked.png">
+                  <a href="https://www.linkedin.com/in/l%C3%A9o-beaubien-lemieux-0b0232347/?originalSubdomain=ca" target="_blank">in/léo.Beaubien-Lemieux</a>
+                </div>
+              </div>
+
+              <div class="hbox_center me_contact_links_item">
+                <img src="Images/logo_itchio.png">
+                <a href="https://maitrepatate.itch.io/" target="_blank">https://maitrepatate.itch.io/</a>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
-  </div>
-  
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-  <div class="vbox_center slide-in-bottom" id="slide-in-bottom" style="gap: 150px;">
-      
-    <!-- Pop-up : Présentation -->
-      <div class="pop_up">
-        <p>ceci est un texte XD</p>
-
-
-      </div>
-
-
-        
-      <!-- Pop-up : Blabla -->
-      <div class="pop_up">
-        <p>ceci est un texte XD</p>
-
-
-      </div>
-
-
-
-        
-      <!-- Pop-up : Infos -->
-      <div class="pop_up">
-        <p>ceci est un texte XD</p>
-
-
-      </div>
-
-
   </div>  
-
-  <br>
-  <br>
-
-
-  
 </div>
 
 
@@ -131,7 +221,7 @@
 window.addEventListener("load", () => {
   const video = document.getElementById("bgVideo");
 
-  document.documentElement.scrollTop = 0;
+  // document.documentElement.scrollTop = 0;
 
   // Après 3 secondes, dézoome la vidéo
   setTimeout(() => {
@@ -139,16 +229,16 @@ window.addEventListener("load", () => {
 
     setTimeout(() => {
       document.getElementById("slide-in-bottom").classList.add("visible");
-      document.getElementById("slide-in-left").classList.add("visible");
-      document.getElementById("slide-in-right").classList.add("visible");
       document.getElementById("slide-in-top").classList.add("visible");
+      document.getElementById("contact_btns").classList.add("visible");
+      // document.documentElement.scrollTop = 0;
 
       setTimeout(() => {
         document.documentElement.classList.remove("no-scroll");
         document.body.classList.remove("no-scroll");
       }, 800);
 
-    }, 3000);
+    }, 4000);
 
   }, 500);
 });
