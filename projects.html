@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" style="  height: 100%;
-  margin: 0;
-  padding: 0;">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio Léo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/header.css" />
@@ -55,8 +52,6 @@
 
 
 <div class="vbox_center">
-
-
   <div class="carousel-wrapper">
     <div class="carousel-track" id="carousel-track">
       <!-- Item 1 -->
@@ -83,10 +78,10 @@
               <div class="hbox_center carousel-job-btn-container">
                 <button class="carousel-job-btn btn_green" onclick="document.location='todo.html'">Level Design</button>
                 <button class="carousel-job-btn btn_orange" onclick="document.location='todo.html'">Encounter Design</button>
-                <button class="carousel-job-btn btn_red" onclick="document.location='todo.html'">AI Design</button>
+                <button class="carousel-job-btn btn_red" onclick="document.location='todo.html'">Enemy Design</button>
               </div>
 
-              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTION</button>
+              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTIONS</button>
             </div>
             <div class="video_presentation">
               <div class="over_image">
@@ -126,11 +121,11 @@
 
               <div class="hbox_center carousel-job-btn-container">
                 <button class="carousel-job-btn btn_green" onclick="document.location='todo.html'">Level Design</button>
-                <button class="carousel-job-btn btn_blue" onclick="document.location='todo.html'">Puzzle Design</button>
-                <button class="carousel-job-btn btn_pink" onclick="document.location='todo.html'">UI/UX Design</button>
+                <button class="carousel-job-btn btn_orange" onclick="document.location='todo.html'">Encounter Design</button>
+                <button class="carousel-job-btn btn_red" onclick="document.location='todo.html'">Enemy Design</button>
               </div>
 
-              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTION</button>
+              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTIONS</button>
             </div>
             <div class="video_presentation">
               <div class="over_image">
@@ -170,19 +165,19 @@
 
               <div class="hbox_center carousel-job-btn-container">
                 <button class="carousel-job-btn btn_green" onclick="document.location='todo.html'">Level Design</button>
-                <button class="carousel-job-btn btn_orange" onclick="document.location='todo.html'">Encounter Design</button>
-                <button class="carousel-job-btn btn_red" onclick="document.location='todo.html'">AI Design</button>
+                <button class="carousel-job-btn btn_blue" onclick="document.location='todo.html'">Puzzle Design</button>
+                <button class="carousel-job-btn btn_pink" onclick="document.location='todo.html'">UI/UX Design</button>
               </div>
 
-              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTION</button>
+              <button onclick="document.location='todo.html'" class="carousel-button">MY CONTRIBUTIONS</button>
             </div>
             <div class="video_presentation">
               <div class="over_image">
                 <img src="Images/over_debugcity.png">
               </div>
 
-              <video preload="auto" autoplay muted loop poster="Images/ff_eldenboat.png" class="video_carousel">
-                <source src="videos/vid_eldenboat.mp4" type="video/mp4">
+              <video preload="auto" autoplay muted loop poster="Images/ff_debugcity.png" class="video_carousel">
+                <source src="videos/vid_debugcity.mp4" type="video/mp4">
               </video>
             </div>
           </div>
@@ -198,7 +193,9 @@
     <!-- Navigation -->
     <div class="carousel-nav">
       <button class="carousel-nav-btn active" onclick="showSlide(0)">1</button>
+      <hr class="carousel-nav-line">
       <button class="carousel-nav-btn" onclick="showSlide(1)">2</button>
+      <hr class="carousel-nav-line">
       <button class="carousel-nav-btn" onclick="showSlide(2)">3</button>
     </div>
 

@@ -16,11 +16,14 @@ html {
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   color: rgb(0, 0, 0);
   font-weight: 300;
   transition: opacity 0.5s ease;
-  /* Suppression de min-width: 1000px pour permettre la responsive */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 /* ------------------ Texts ------------------ */
@@ -250,12 +253,12 @@ button.default-style:active {
   min-width: 100%;
   min-height: 100%;
   z-index: -100;
-  transition: transform 4s linear;
-  transform: scale(0.8); 
+  transition: transform 4s ease;
+  transform: scale(1); 
 }
 
 #bgVideo.zoom-out {
-  transform: scale(1.2);
+  transform: scale(1.6);
 }
 
 #content {
@@ -338,5 +341,4 @@ button.default-style:active {
   width: 100%;
   cursor: pointer;
   object-fit: contain;
-  filter: invert(100%);
 }

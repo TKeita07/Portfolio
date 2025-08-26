@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio Léo</title>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="CSS/header.css" />
@@ -19,7 +18,7 @@
 
 <!--------------------------------------------------- Debut du Header --------------------------------------------------->
 
-<body id="top">
+<body id="top" style="background-color: black;">
 
 <div id="navbar"></div>
 
@@ -56,31 +55,45 @@
 
   <div class="vbox_center me_section">
 
-    <!-- Photo + About Me text section -->
-    <div id="about_me" class="hbox_center me_about_me">
-
-      <!-- Photo -->
-      <div class="me_about_pfp">
-        <img src="Images/about_pfp.png">
+    <div class="vbox_center">
+      <!-- ABOUT ME title -->
+      <div class="me_title">
+        <p>ABOUT ME</p>
       </div>
+      <hr class="me_line">
 
-      <!-- About Me text -->
-      <div class="vbox_center me_about_text">
-        <div class="me_title">
-          <p>ABOUT ME</p>
+      <!-- Photo + About Me text section -->
+      <div id="about_me" class="hbox_center me_about_me">
+
+        <!-- Photo -->
+        <div class="me_about_pfp">
+          <img src="Images/about_pfp.png">
         </div>
 
-        <div class="vbox me_about_text_content">
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-          <p>orem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada</p>
-          <p>orem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada</p>
-      
-        </div>
+        <!-- About Me text -->
+        <div class="vbox_center me_about_text">
 
+          <div class="vbox me_about_text_content">
+            <p class="me_text">
+              Enchanté! Je suis Léo Beaubien-Lemieux, Game Designer <span class="me_text_highlight">ayant un penchant pour le Level Design et l'Ennemi Design.</span>
+              Au fil de mes projets, j'ai progressivement fusionné ces deux disciplines pour 
+              <span class="me_text_highlight"> me spécialiser en tant qu'<span class="me_text_highlight_bold">Encounter Designer.</span></spans></p>
+            <p class="me_text">Lorsque je ne suis pas en train de créer des jeux, je fais du grandeur nature, différents jeux de rôles (Call of Cthulhu, Alien, Ironsworn, Pathfinder etc.)
+              ou en train de nourrir ma <del>addiction</del> collection de jeux de sociétés! </p>
+            <p class="me_text">Actuellement, <span class="me_text_highlight">je suis étudiant en troisième année</span> de Création de jeux vidéo à
+              <span class="me_text_highlight">l'Université du Québec en Abitibi-Témiscamingue, profil design.</span>
+              Autres que mes projets universitaires, j'ai eu la chance de <span class="me_text_highlight">participé à plusieurs game jams</span>, dont mon dernier, le Gamelab 2025 organisé par Ubisoft,
+                où mon équipe a remporté le prix de la Meilleure Expérience Utilisateur et obtenu une nomination en Meilleur Design.
+                <span class="me_text_highlight">Vous pouvez voir mes projets <a href="projects.html" class="me_text_highlight_bold">en cliquant ici ! </a></span>
+                </p>
+        
+          </div>
+
+        </div>
       </div>
+
     </div>
+
 
 
     <!-- Engines -->
@@ -106,7 +119,7 @@
     <div id="tools" class="vbox_center me_tools" >
         <!-- Tools title -->
         <div class="me_title">
-          <p>EXPERIENCE WITH ENGINES</p>
+          <p>EXPERIENCE WITH OTHER TOOLS</p>
         </div>
 
         <hr class="me_line">
@@ -117,9 +130,12 @@
             <img src="Images/about_logo_office.png">
             <img src="Images/about_logo_miro.png">
             <img src="Images/about_logo_jira.png">
+            <img src="Images/about_logo_notion.png" style="filter: invert(100%);">
           </div>
           <div class="hbox_center me_tools_logos">
-            <img src="Images/about_logo_notion.png" style="filter: invert(100%);">
+            <img src="Images/about_logo_perforce.png" style="width: 40%;">
+            <img src="Images/about_logo_figma.png">
+            <img src="Images/about_logo_git.png">
 
           </div>
         </div>
@@ -135,13 +151,16 @@
         <hr class="me_line">
 
         <!-- Competences list -->
+        <p class="me_competences_text">Mes principales compétences sont axées sur le Game Design (spécialisé dans le gameplay et tout ce qui concerne l'Encounter Design).
+            J'aime penser que mon amour pour le level design et l'enemy design me permet de concevoir des moments de jeux mémorables !</p>
+         
         <div class="hbox_center me_competences_list">
           <!-- Engines -->
           <div class="vbox_center me_competences_list_item">
             <img src="Images/about_logo_engines.png">
 
             <p class="me_competences_list_item_title">GAME PROTOTYPING</p>
-            <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+            <p class="me_competences_list_item_text">BEHAVIOR TREE | LEVEL BLOCKOUTS | STATE MACHINES | QUICK PLAYTESTING</p>
           </div>
           
           <!-- Problems -->
@@ -149,7 +168,7 @@
             <img src="Images/about_logo_problems.png">
 
             <p class="me_competences_list_item_title">PROBLEM SOLVING</p>
-            <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+            <p class="me_competences_list_item_text">GAME BALANCE | ENEMIES | LEVELS | GAMEPLAY | ENCOUNTERS | ANTICIPATION</p>
           </div>
           
           <!-- Documentation -->
@@ -157,7 +176,7 @@
             <img src="Images/about_logo_documentation.png">
 
             <p class="me_competences_list_item_title">DOCUMENTATION</p>
-            <p class="me_competences_list_item_text">Lorem ipsum dolor sit amet consectetur adipiscing elit.  sit amet consectetur adipiscing elit.</p>
+            <p class="me_competences_list_item_text">GDD | ENEMIES | AGILE GESTION | FLOWCHART | ENCOUNTER BRIEFS | PLAYER</p>
           </div>
         </div>
     </div>
