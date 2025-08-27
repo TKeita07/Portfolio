@@ -1,0 +1,9 @@
+.gamejams_list{
+    width: 70%;
+    gap: 50px;
+}
+
+.gamejams_item {
+    width: 100%;
+    gap: 20px;
+}

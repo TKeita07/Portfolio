@@ -55,15 +55,15 @@
 
   <div class="vbox_center me_section">
 
-    <div class="vbox_center">
+    <section id="about_me" class="vbox_center">
       <!-- ABOUT ME title -->
-      <div class="me_title">
+      <div class="title">
         <p>ABOUT ME</p>
       </div>
       <hr class="me_line">
 
       <!-- Photo + About Me text section -->
-      <div id="about_me" class="hbox_center me_about_me">
+      <div class="hbox_center me_about_me">
 
         <!-- Photo -->
         <div class="me_about_pfp">
@@ -74,17 +74,17 @@
         <div class="vbox_center me_about_text">
 
           <div class="vbox me_about_text_content">
-            <p class="me_text">
-              Enchanté! Je suis Léo Beaubien-Lemieux, Game Designer <span class="me_text_highlight">ayant un penchant pour le Level Design et l'Ennemi Design.</span>
+            <p class="content_text">
+              Enchanté! Je suis Léo Beaubien-Lemieux, Game Designer <span class="content_text_highlight">ayant un penchant pour le Level Design et l'Ennemi Design.</span>
               Au fil de mes projets, j'ai progressivement fusionné ces deux disciplines pour 
-              <span class="me_text_highlight"> me spécialiser en tant qu'<span class="me_text_highlight_bold">Encounter Designer.</span></spans></p>
-            <p class="me_text">Lorsque je ne suis pas en train de créer des jeux, je fais du grandeur nature, différents jeux de rôles (Call of Cthulhu, Alien, Ironsworn, Pathfinder etc.)
-              ou en train de nourrir ma <del>addiction</del> collection de jeux de sociétés! </p>
-            <p class="me_text">Actuellement, <span class="me_text_highlight">je suis étudiant en troisième année</span> de Création de jeux vidéo à
-              <span class="me_text_highlight">l'Université du Québec en Abitibi-Témiscamingue, profil design.</span>
-              Autres que mes projets universitaires, j'ai eu la chance de <span class="me_text_highlight">participé à plusieurs game jams</span>, dont mon dernier, le Gamelab 2025 organisé par Ubisoft,
+              <span class="content_text_highlight"> me spécialiser en tant qu'<span class="content_text_highlight_bold">Encounter Designer.</span></spans></p>
+            <p class="content_text">Lorsque je ne suis pas en train de créer des jeux, je fais du grandeur nature, différents jeux de rôles (Call of Cthulhu, Alien, Ironsworn, Pathfinder etc.)
+              ou en train de nourrir mon <del>addiction</del> catalogue de jeux de sociétés! </p>
+            <p class="content_text">Actuellement, <span class="content_text_highlight">je suis étudiant en troisième année</span> de Création de jeux vidéo à
+              <span class="content_text_highlight">l'Université du Québec en Abitibi-Témiscamingue, profil design.</span>
+              Autres que mes projets universitaires, j'ai eu la chance de <span class="content_text_highlight">participé à plusieurs game jams</span>, dont mon dernier, le Gamelab 2025 organisé par Ubisoft,
                 où mon équipe a remporté le prix de la Meilleure Expérience Utilisateur et obtenu une nomination en Meilleur Design.
-                <span class="me_text_highlight">Vous pouvez voir mes projets <a href="projects.html" class="me_text_highlight_bold">en cliquant ici ! </a></span>
+                <span class="content_text_highlight">Vous pouvez voir mes projets <a href="projects.html" class="content_text_highlight_bold">en cliquant ici ! </a></span>
                 </p>
         
           </div>
@@ -92,14 +92,14 @@
         </div>
       </div>
 
-    </div>
+    </section>
 
 
 
     <!-- Engines -->
-    <div id="engines" class="vbox_center me_engines" >
+    <section id="engines" class="vbox_center me_engines" >
         <!-- Engines title -->
-        <div class="me_title">
+        <div class="title">
           <p>EXPERIENCE WITH ENGINES</p>
         </div>
 
@@ -111,14 +111,14 @@
           <img src="Images/about_logo_godot.png">
           <img src="Images/about_logo_unity.png">
         </div>
-    </div>
+    </section>
 
 
 
     <!-- Tools -->
-    <div id="tools" class="vbox_center me_tools" >
+    <section id="tools" class="vbox_center me_tools" >
         <!-- Tools title -->
-        <div class="me_title">
+        <div class="title">
           <p>EXPERIENCE WITH OTHER TOOLS</p>
         </div>
 
@@ -139,12 +139,12 @@
 
           </div>
         </div>
-    </div>
+    </section>
 
     <!-- Competences -->
-    <div id="competences" class="vbox_center me_competences" >
+    <section id="competences" class="vbox_center me_competences" >
         <!-- Competences title -->
-        <div class="me_title">
+        <div class="title">
           <p>COMPÉTENCES</p>
         </div>
 
@@ -179,12 +179,12 @@
             <p class="me_competences_list_item_text">GDD | ENEMIES | AGILE GESTION | FLOWCHART | ENCOUNTER BRIEFS | PLAYER</p>
           </div>
         </div>
-    </div>
+    </section>
 
     <!-- Contact info -->
-    <div id="contact" class="vbox_center me_contact" >
+    <section id="contact" class="vbox_center me_contact" >
         <!-- Contact title -->
-        <div class="me_title">
+        <div class="title">
           <p>CONTACT INFO</p>
         </div>
 
@@ -219,7 +219,7 @@
 
 
 
-    </div>
+    </section>
 
   </div>
 
@@ -246,9 +246,9 @@
           if (id == "contact") {
             document.querySelector("#nav-btn-contact").classList.add("active");
             document.querySelector("#nav-btn-about").classList.remove("active");
-          } else {
-            document.querySelector("#nav-btn-contact").classList.remove("active");
+          } else if (id == "about_me") {
             document.querySelector("#nav-btn-about").classList.add("active");
+            document.querySelector("#nav-btn-contact").classList.remove("active");
           }
         }
       });

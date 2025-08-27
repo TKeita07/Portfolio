@@ -4,7 +4,7 @@ header {
   display: flex;
   flex-direction: column; 
   background-color: #000000;
-  position: fixed;
+  position: sticky;
   top: 0;   
   width: 100%;
   min-width: 100%;
@@ -17,6 +17,13 @@ header {
   /* border-bottom: rgb(255, 255, 255) 1px solid; */
 }
 
+#navbar {
+
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* pour qu’il reste au-dessus */
+
+}
 
 
 nav {
@@ -39,12 +46,18 @@ nav {
 }
 
 .nav-btn:hover {
-  border-bottom: 2px solid white; /* ligne blanche au hover */
+  border-bottom: 2px solid #b08d57; /* ligne blanche au hover */
 }
 
 .nav-btn.active {
-  cursor: default;             /* plus de main au survol */
-  pointer-events: none;        /* empêche le clic */
-  border-bottom: 2px solid white; 
+  /**cursor: default;             /* plus de main au survol */
+  /***pointer-events: none;        /* empêche le clic */
+  border-bottom: 2px solid #b08d57; 
 }
 
+
+.nav_big_text {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 24px;
+}

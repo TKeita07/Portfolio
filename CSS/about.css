@@ -22,11 +22,7 @@
     margin: 10px 0px 35px 0px;
 }
 
-.me_title {
-  font-size: 46px;
-  font-weight: 950;
-  color: #d8a34f;
-}
+
 
 /* ABOUT ME */
 
@@ -59,19 +55,6 @@
     gap: 20px;
 }
 
-.me_text {
-    color: white;
-    text-align: justify;
-}
-
-.me_text_highlight {
-    color: #ffc546;
-
-}
-.me_text_highlight_bold{
-    font-weight: bold;
-
-}
 
 
 /* ENGINES */

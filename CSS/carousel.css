@@ -30,12 +30,12 @@
 
 .carousel-item-container {
   height: 100%;
-  padding: 0px 100px 100px 100px;
+  padding: 50px 100px 100px 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-between;
   width: 66.66%;
 }
