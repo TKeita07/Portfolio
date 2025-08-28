@@ -17,7 +17,7 @@ html {
 
 body {
   font-family: 'Noto Sans', sans-serif;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: 300;
   transition: opacity 0.5s ease;
   margin: 0;
@@ -38,6 +38,7 @@ a {
 .content_text {
     color: white;
     text-align: justify;
+    font-size: 21px;
 }
 
 .content_text_highlight {
@@ -128,8 +129,13 @@ button.no-style {
 
 /* ------------------ Autres ------------------ */
 
-
-
+.divider {
+    width: 10%;
+    height: 2px;
+    background-color: #b08d57;
+    border-color: #b08d57;
+    margin: 10px 0px 35px 0px;
+}
 
 
 #bgVideo {

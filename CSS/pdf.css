@@ -1,7 +1,6 @@
 .pdf_wrapper {
-    height: 100vh; /* pleine hauteur de la fenêtre */
+    height: 92vh; /* pleine hauteur de la fenêtre */
     width: 100%;
-    padding-top: 68px; /* fenêtre - hauteur du header */
 }
 
 .pdf_object {

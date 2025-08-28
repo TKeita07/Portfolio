@@ -1,9 +1,87 @@
-.gamejams_list{
-    width: 70%;
-    gap: 50px;
+.gj_list{
+    width: 65%;
+    gap: 30px;
+    padding-top: 20px;
+    padding-bottom: 200px;
 }
 
-.gamejams_item {
+.gj_item {
     width: 100%;
-    gap: 20px;
+    gap: 10px;
+}
+
+
+
+/* Image */
+.gj_image {
+    width: 70%;
+    height: 100%;
+}
+
+.gj_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+
+}
+
+
+
+/* Icons */
+.gj_icons_container{
+    width: 27%;
+}
+.gj_icons{
+    width: 100%;
+    gap: 15px;
+    padding: 20px 0px;
+
+
+}
+.gj_icon_value{
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    justify-content: start;
+
+
+}
+.gj_icon {
+    width: 3vw;         /* 5% de la largeur de l’écran */
+    height: auto;       /* conserve les proportions */
+    max-width: 200px;    /* limite si l’écran est très grand */
+    object-fit: contain;
+}
+
+.gj_icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* garde les proportions sans les déformer */
+    /* border-radius: 50%; */
+
+}
+.gj_value{
+    color: #b08d57;
+    font-weight: bold;
+    font-size: 21px;
+    width: 50%;
+    text-align: center;
+}
+
+
+/* Description */
+.gj_desc_container{
+    width: 100%;
+    align-self: stretch;
+}
+.gj_desc{
+    width: 100%;
+    gap: 15px;
+    padding: 20px;
+}
+.gj_desc_title{
+    color: #d8a34f;
+    font-size: 25px;
+    font-weight: 900;
 }

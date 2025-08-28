@@ -7,7 +7,7 @@
   align-items: stretch;
   justify-content: center;
   
-  height: calc(100vh - (0px)); /* fenêtre - hauteur du header */
+  height: calc(100vh - (8vh)); /* fenêtre - hauteur du header */
 }
 
 .carousel-track {
@@ -118,7 +118,6 @@
   border-radius: 50px;
   top: 0;
   left: 0;
-  background-color: rgb(255, 255, 255);
 }
 
 .over_image {
