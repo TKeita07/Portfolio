@@ -13,7 +13,51 @@
 
 
 
+<!---------------------- Scripts -------------------------->
 
+<script>
+// JS : gérer le zoom et l'apparition du contenu
+window.addEventListener("load", () => {
+  const video = document.getElementById("bgVideo");
+
+  if (window.location.hash === "#top" || window.location.hash === "") {
+    // Après 3 secondes, dézoome la vidéo
+    setTimeout(() => {
+      video.classList.add("zoom-out");
+
+      setTimeout(() => {
+        document.getElementById("slide-in-bottom").classList.add("visible");
+        document.getElementById("contact_btns").classList.add("visible");
+        // document.documentElement.scrollTop = 0;
+
+        setTimeout(() => {
+          document.documentElement.classList.remove("no-scroll");
+          document.body.classList.remove("no-scroll");
+          
+          document.getElementById("slide-in-top").classList.add("visible");
+        }, 800);
+
+      }, 4000);
+
+    }, 500);
+  } else {
+    document.documentElement.classList.remove("no-scroll");
+    document.body.classList.remove("no-scroll");
+    document.getElementById("slide-in-bottom").classList.add("already_visible");
+    if (document.getElementById("slide-in-top") !== null){
+      document.getElementById("slide-in-top").classList.add("already_visible");
+    }
+    document.getElementById("contact_btns").classList.add("already_visible");
+
+  }
+
+
+});
+
+
+</script>
+
+<!--==================== Scripts ========================-->
 
 
 <!--------------------------------------------------- Debut du Header --------------------------------------------------->
@@ -29,6 +73,10 @@
       document.getElementById("navbar").innerHTML = html;
       document.querySelector("#navbar header").classList.add("slide-in-top");
       document.getElementById("nav-btn-index").classList.add("active");
+      if (!(window.location.hash === "#top" || window.location.hash === "")) {
+        console.log("not top");
+        document.getElementById("slide-in-top").classList.add("already_visible");
+      }
 
       let sections = document.querySelectorAll('section');  // Récupère la div principale (ton header)
       let navContainer = document.getElementById('nav_hbox');
@@ -64,7 +112,7 @@
           });
       };
 
-
+      
     });
 </script>
 
@@ -88,11 +136,11 @@
 
 
 <!-- The video -->
-<!-- <video autoplay muted loop id="bgVideo">
-  <source src="Videos/gif_eldenboat.gif" type="video/mp4">
-</video> -->
+<video autoplay muted loop id="bgVideo">
+  <source src="Videos/vid_summary.mp4" type="video/mp4">
+</video>
 
-<img id="bgVideo" src="Videos/gif_eldenboat.gif">
+<!-- <img id="bgVideo" src="Videos/gif_eldenboat.gif"> -->
 
 <div class="home_global">
 
@@ -270,69 +318,5 @@
 </div>
 
 
-
-<!---------------------- Scripts -------------------------->
-
-<script>
-// JS : gérer le zoom et l'apparition du contenu
-window.addEventListener("load", () => {
-  const video = document.getElementById("bgVideo");
-
-  if (window.location.hash === "#top" || window.location.hash === "") {
-    // Après 3 secondes, dézoome la vidéo
-    setTimeout(() => {
-      video.classList.add("zoom-out");
-
-      setTimeout(() => {
-        document.getElementById("slide-in-bottom").classList.add("visible");
-        document.getElementById("contact_btns").classList.add("visible");
-        // document.documentElement.scrollTop = 0;
-
-        setTimeout(() => {
-          document.documentElement.classList.remove("no-scroll");
-          document.body.classList.remove("no-scroll");
-          document.getElementById("slide-in-top").classList.add("visible");
-        }, 800);
-
-      }, 4000);
-
-    }, 500);
-  } else {
-    document.documentElement.classList.remove("no-scroll");
-    document.body.classList.remove("no-scroll");
-    document.getElementById("slide-in-bottom").classList.add("already_visible");
-    document.getElementById("slide-in-top").classList.add("already_visible");
-    document.getElementById("contact_btns").classList.add("already_visible");
-
-  }
-
-
-});
-
-
-  // affichage après l'animation de la vidéo
-window.addEventListener("load", () => {
-
-});
-
-
-
-
-
-</script>
-
-
-
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-
-});
-
-</script>
-            <!-- document.querySelector("#nav-btn-contact").classList.add("active"); -->
-
-<!--==================== Scripts ========================-->
 </body>
 </html>
